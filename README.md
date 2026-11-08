@@ -106,7 +106,3 @@ Docker Compose 会将数据目录、工作区和用户技能映射到持久化�
 ## 基准评测
 
 项目包含 SWE-bench 与 FeatureBench 的评测入口。依赖、命令及评分方式见 [RUN_ON_DOCKER.md](RUN_ON_DOCKER.md)。该文档注明，当前项目尚未完成真实 Docker 构建和端到端评测验证。
-
-## License
-
-本仓库尚未声明开源许可证。添加许可证文件前，请确认项目代码及依赖的授权条件。
