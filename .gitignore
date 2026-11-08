@@ -1,0 +1,34 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.key
+
+# Python
+.venv/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Local data and generated output
+backend/.yunagent-next/
+backend/workspace/
+*.db
+*.sqlite
+*.sqlite3
+runs/
+*.log
+
+# Desktop dependencies and builds
+desktop/node_modules/
+desktop/dist/
+desktop/dist-electron/
+
+# Operating system files
+.DS_Store
+Thumbs.db

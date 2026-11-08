@@ -1,0 +1,20 @@
+services:
+  yunagent:
+    build: .
+    ports:
+      - "127.0.0.1:8765:8765"
+    environment:
+      KORENEXT_PROVIDER: ${KORENEXT_PROVIDER:-openai}
+      KORENEXT_MODEL: ${KORENEXT_MODEL:-gpt-4.1-mini}
+      KORENEXT_API_KEY: ${KORENEXT_API_KEY:-}
+      KORENEXT_BASE_URL: ${KORENEXT_BASE_URL:-https://api.openai.com/v1}
+    volumes:
+      - yunagent_data:/var/lib/yunagent/data
+      - yunagent_workspace:/var/lib/yunagent/workspace
+      - yunagent_skills:/var/lib/yunagent/skills
+    restart: unless-stopped
+
+volumes:
+  yunagent_data:
+  yunagent_workspace:
+  yunagent_skills:

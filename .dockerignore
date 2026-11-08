@@ -1,0 +1,17 @@
+**/__pycache__/
+**/*.pyc
+**/.pytest_cache/
+**/.ruff_cache/
+backend/.venv/
+backend/.env
+backend/.yunagent-next/
+backend/workspace/
+desktop/node_modules/
+desktop/dist/
+desktop/dist-electron/
+native/
+.github/
+.git/
+.env
+*.zip
+*.log
